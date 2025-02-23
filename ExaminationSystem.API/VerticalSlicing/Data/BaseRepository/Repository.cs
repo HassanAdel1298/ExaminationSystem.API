@@ -1,14 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
-using ExaminationSystem.API.VerticalSlicing.Data.Models;
+﻿using ExaminationSystem.API.VerticalSlicing.Data.Models;
+using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
 namespace ExaminationSystem.API.VerticalSlicing.Data.BaseRepository
 {
-    public class BaseRepository<T> : IBaseRepository<T> where T : BaseModel
+    public class Repository<T> : IRepository<T> where T : BaseModel
     {
         public Context _context { get; }
 
-        internal BaseRepository(Context context)
+        internal Repository(Context context)
         {
             _context = context;
         }

@@ -12,7 +12,7 @@ namespace ExaminationSystem.API.VerticalSlicing.Common
         protected override void Load(ContainerBuilder builder)
         {
 
-            builder.RegisterGeneric(typeof(BaseRepository<>)).As(typeof(IBaseRepository<>)).InstancePerLifetimeScope();
+            builder.RegisterGeneric(typeof(Repository<>)).As(typeof(IRepository<>)).InstancePerLifetimeScope();
 
             builder.RegisterType<Context>().InstancePerLifetimeScope();
 
@@ -28,7 +28,7 @@ namespace ExaminationSystem.API.VerticalSlicing.Common
             builder.RegisterType<ControllereParameters>().InstancePerLifetimeScope();
 
             builder.RegisterGeneric(typeof(RequestParameters<>)).InstancePerLifetimeScope();
-            
+
 
         }
     }

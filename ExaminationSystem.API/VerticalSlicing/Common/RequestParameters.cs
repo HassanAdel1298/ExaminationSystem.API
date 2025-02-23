@@ -9,11 +9,11 @@ namespace ExaminationSystem.API.VerticalSlicing.Common
     {
         public IMediator Mediator { get; set; }
         public UserState UserState { get; set; }
-        public IBaseRepository<T> Repository { get; set; }
+        public IRepository<T> Repository { get; set; }
 
         public RequestParameters(IMediator mediator,
             UserState userState,
-            IBaseRepository<T> repository)
+            IRepository<T> repository)
         {
             Mediator = mediator;
             UserState = userState;

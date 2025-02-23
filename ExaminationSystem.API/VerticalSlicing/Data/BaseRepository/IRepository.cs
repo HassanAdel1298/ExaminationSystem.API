@@ -1,10 +1,9 @@
-﻿using ExaminationSystem.API.VerticalSlicing.Common.Enums;
-using ExaminationSystem.API.VerticalSlicing.Data.Models;
+﻿using ExaminationSystem.API.VerticalSlicing.Data.Models;
 using System.Linq.Expressions;
 
 namespace ExaminationSystem.API.VerticalSlicing.Data.BaseRepository
 {
-    public interface IBaseRepository<T> where T : BaseModel
+    public interface IRepository<T> where T : BaseModel
     {
         
         Task<IQueryable<T>> GetAllAsync();
