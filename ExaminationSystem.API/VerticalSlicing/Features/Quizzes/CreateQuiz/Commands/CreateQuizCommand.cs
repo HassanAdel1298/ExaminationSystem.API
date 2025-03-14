@@ -30,13 +30,7 @@ namespace ExaminationSystem.VerticalSlicing.Features.Quizzes.CreateQuiz.Commands
             }
 
             var quiz = request.MapOne<Quiz>();
-            
-            int userid = 0;
-            bool checkLogin = int.TryParse(_userState.Id, out userid);
-            if (checkLogin)
-            {
-                quiz.InstructorID = userid;
-            }
+           
             
             _repository.CreateAsync(quiz);
 

@@ -45,7 +45,7 @@ namespace ExaminationSystem.VerticalSlicing.Features.Quizzes.UpdateQuiz.Commands
             _repository.Update(quiz);
             _repository.SaveChangesAsync();
 
-            return ResultDTO.Success(true, "Create Quiz successfully!");
+            return ResultDTO.Success(true, "Update Quiz successfully!");
         }
     }
 }

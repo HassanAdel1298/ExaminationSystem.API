@@ -6,9 +6,9 @@ namespace ExaminationSystem.API.VerticalSlicing.Data.BaseRepository
 {
     public class Repository<T> : IRepository<T> where T : BaseModel
     {
-        public Context _context { get; }
+        private readonly Context _context;
 
-        internal Repository(Context context)
+        public Repository(Context context)
         {
             _context = context;
         }

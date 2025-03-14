@@ -15,7 +15,6 @@ namespace ExaminationSystem.API.VerticalSlicing.Features.Quizzes.DeleteQuiz
         }
 
         [HttpPost]
-        [Authorize]
         public async Task<ResultDTO> DeleteQuiz(DeleteQuizCommand request)
         {
             var result = await _mediator.Send(request);

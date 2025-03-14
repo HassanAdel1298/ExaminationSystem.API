@@ -15,7 +15,6 @@ namespace ExaminationSystem.API.VerticalSlicing.Features.Questions.CreateQuestio
         }
 
         [HttpPost]
-        [Authorize]
         public async Task<ResultDTO> CreateQuizDetails(CreateQuizDetailsCommand request)
         {
             var result = await _mediator.Send(request);

@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using ExaminationSystem.API.VerticalSlicing.Common;
 using ExaminationSystem.API.VerticalSlicing.Common.DTOs;
 using ExaminationSystem.API.VerticalSlicing.Common.Helpers;

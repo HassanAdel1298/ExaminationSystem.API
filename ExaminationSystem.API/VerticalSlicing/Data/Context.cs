@@ -25,10 +25,8 @@ namespace ExaminationSystem.API.VerticalSlicing.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Choise> Choises { get; set; }
-        public DbSet<Instructor> Instructors { get; set; }
         public DbSet<Question> Questions { get; set; }
         public DbSet<Quiz> Quizzes { get; set; }
-        public DbSet<Student> Students { get; set; }
         public DbSet<StudentAnswerQuestion> studentAnswerQuestions { get; set; }
 
 

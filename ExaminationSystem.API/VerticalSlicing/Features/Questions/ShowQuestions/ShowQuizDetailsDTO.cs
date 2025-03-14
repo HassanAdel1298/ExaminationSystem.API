@@ -1,6 +1,4 @@
-﻿using ExaminationSystem.API.VerticalSlicing.Common.DTOs;
-using MediatR;
-
+﻿
 namespace ExaminationSystem.API.VerticalSlicing.Features.Questions.ShowQuestions
 {
     public class ShowQuizDetailsDTO

@@ -15,7 +15,6 @@ namespace ExaminationSystem.API.VerticalSlicing.Features.Quizzes.UpdateQuiz
         }
 
         [HttpPost]
-        [Authorize]
         public async Task<ResultDTO> UpdateQuiz(UpdateQuizCommand request)
         {
             var result = await _mediator.Send(request);

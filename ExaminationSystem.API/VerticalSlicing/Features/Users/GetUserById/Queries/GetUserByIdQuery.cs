@@ -4,7 +4,6 @@ using ExaminationSystem.API.VerticalSlicing.Common.DTOs;
 using ExaminationSystem.API.VerticalSlicing.Common.Helpers;
 using ExaminationSystem.API.VerticalSlicing.Data.Models;
 using ExaminationSystem.API.VerticalSlicing.Features.Users.Register;
-using Azure;
 
 
 namespace ExaminationSystem.API.VerticalSlicing.Features.Users.GetUserById.Queries

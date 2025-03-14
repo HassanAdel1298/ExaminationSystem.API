@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
+﻿
 namespace ExaminationSystem.API.VerticalSlicing.Data.Models
 {
     public class Question : BaseModel

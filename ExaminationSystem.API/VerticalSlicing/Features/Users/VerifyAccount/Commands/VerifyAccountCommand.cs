@@ -3,7 +3,6 @@ using ExaminationSystem.API.VerticalSlicing.Common.Helpers;
 using ExaminationSystem.API.VerticalSlicing.Common;
 using ExaminationSystem.API.VerticalSlicing.Data.Models;
 using ExaminationSystem.API.VerticalSlicing.Common.DTOs;
-using Microsoft.EntityFrameworkCore;
 
 namespace ExaminationSystem.API.VerticalSlicing.Features.Users.VerifyAccount.Commands
 {

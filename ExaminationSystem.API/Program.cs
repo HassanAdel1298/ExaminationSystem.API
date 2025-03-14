@@ -1,7 +1,6 @@
 using Autofac.Extensions.DependencyInjection;
 using Autofac;
 using ExaminationSystem.API.VerticalSlicing.Common;
-using System.Reflection;
 using ExaminationSystem.API.VerticalSlicing.Common.Constants;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -12,9 +11,8 @@ using AutoMapper;
 using ExaminationSystem.API.VerticalSlicing.Common.Helpers;
 using ExaminationSystem.API.VerticalSlicing.Common.Middlewares;
 using Microsoft.OpenApi.Models;
-using Autofac.Core;
-using Microsoft.AspNetCore.Hosting;
 using ExaminationSystem.VerticalSlicing.Features.Users.Register.Commands;
+using System.Reflection;
 
 
 namespace ExaminationSystem.API
@@ -96,8 +94,9 @@ namespace ExaminationSystem.API
             builder.Host.ConfigureContainer<ContainerBuilder>(builder =>
                 builder.RegisterModule(new AutofacModule()));
 
-            builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly
-                                            (typeof(RegisterUserCommand).Assembly));
+            builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies
+                                            (Assembly.GetExecutingAssembly())); 
+
 
             builder.Services.AddHttpContextAccessor();
 

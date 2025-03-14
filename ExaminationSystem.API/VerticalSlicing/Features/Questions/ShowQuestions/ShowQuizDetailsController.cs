@@ -1,11 +1,8 @@
 ﻿using ExaminationSystem.API.VerticalSlicing.Common;
 using ExaminationSystem.API.VerticalSlicing.Common.DTOs;
 using Microsoft.AspNetCore.Mvc;
-using ExaminationSystem.API.VerticalSlicing.Common.Helpers;
-using ExaminationSystem.API.VerticalSlicing.Features.Quizzes.SearchQuizzes.Queries;
 using Microsoft.AspNetCore.Authorization;
 using ExaminationSystem.API.VerticalSlicing.Features.Questions.ShowQuestions.Queries;
-using ExaminationSystem.API.VerticalSlicing.Data.Models;
 
 namespace ExaminationSystem.API.VerticalSlicing.Features.Questions.ShowQuestions
 {
